@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;box-sizing: border-box;}
+        a{color:inherit;}
+        ol,ul{
+            list-style: none;
+        }
+        body{
+            display:flex;
+        }
+        aside{
+            width:30%;
+            background:#052a46;
+            padding:20px;
+            min-width:220px;
+        }
+        main{
+            width:70%;
+            padding:20px;
+            min-width:600px;
+        }
+        .photo-container{
+            margin:50px auto;
+            width:170px;
+        }
+        .photo{
+            width:130px;
+            height:160px;
+            border:1px solid black;
+        }
+        img{
+            width:100%;
+        }
+        .base-msg-head{
+            margin:0 auto;
+            color:white;
+            font-size:20px;
+            line-height:38px;
+            width:90%;
+            height:38px;
+            background:#0B70BD;
+            padding-left:5px;
+            position: relative;
+        }
+        .base-msg-head::after{
+            content:'';
+            border:15px solid transparent;
+            border-top: 15px solid #0B70BD;
+            width:0;
+            position: absolute;
+            top:38px;
+        }
+        .base-msg{
+            width:90%;
+            margin:0 auto;
+            color:white;
+        }
+        .base-msg>ul>li{
+            padding-top:10px;
+        }
+        main>header{
+            margin-top:42px;
+        }
+        section{
+            margin-top:30px;
+            line-height:25px;
+        }
+        section>header{
+            color:#454545;
+            display: flex;
+            align-items:center;
+        }
+        section>header .line-container{
+            width:90%;
+        }
+        section>header>.line-container>.line{
+            margin:0 auto;
+            padding-right:-20px;
+            width:90%;
+            border:2px solid #0B70BD;
+            height:0;
+        }
+        section>div{
+            padding-top:10px;
+        }
+        .edu>div{
+            width:90%;
+            display:flex;
+            justify-content: space-between;
+        }
+        section h4{
+            font-weight:inherit;
+        }
+        section .works-name>h4{
+            font-size:16px;
+            font-weight:inherit;
+            margin-bottom:10px;
+            color:#007bff;
+        }
+        section .works-name>p{
+            margin:10px 0 ;
+            color:#007bff;
+        }
+        .works-container{
+            display:flex;
+            width:90%;
+        }
+        .works-img,.works-right{
+            width:50%;
+            padding:0 10px;
+        }
+        .skills h4{
+            color:#007bff;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+        .skills p{
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <div class="photo-container">
+        <div class="photo">
+            <img src="./works/photo.jpg" alt="照片" title="相片">
+        </div>
+    </div>
+        <div class="aside-bottom">
+            <div class="base-msg-head">
+                <span>基本信息</span>
+            </div>
+            <div class="base-msg">
+                <ul>
+                    <li>性别:男</li>
+                    <li>政治面貌:团员</li>
+                    <li>生日:1996-12-09</li>
+                    <li>联系电话:13283800843</li>
+                    <li>QQ:584788096</li>
+                    <li>电子邮箱:touhou@lolimy.cn</li>
+                    <li>Github:<a href="https://github.com/xuziang111">链接</a></li>
+                    <li>博客:<a href="https://www.jianshu.com/u/a02d004f48cd">链接</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <h1>徐子昂</h1>
+        </header>
+        <section class="job">
+            <header>
+                <h3>求职意向</h3>
+                <div class="line-container"><div class="line"></div></div>
+            </header>
+            <div>
+                <h4>前端开发工程师</h4>
+            </div>
+        </section>
+        <section class="edu">
+                <header>
+                        <h3>教育背景</h3>
+                        <div class="line-container"><div class="line"></div></div>
+                    </header>
+                    <div>
+                        <p>郑州轻工业学院</p>
+                        <p>2014.9-2018.6</p>
+                        <p>电子信息工程</p>
+                    </div>
+        </section>
+        <section class="works">
+            <header>
+                <h3>作品展示</h3>
+                <div class="line-container"><div class="line"></div></div>
+            </header>
+            <div class="works-container">
+                <div class="works-img"><a href="https://lolimy.club/163-music/src"><img src="./works/cloudmusic.jpg" alt="网易云音乐" tittle="网易云音乐"></a></div>
+                    <div class="works-right">
+                        <div class="works-name">
+                            <h4>网易云音乐</h4>
+                            <hr>
+                            <p><a href="https://github.com/xuziang111/163-music">项目地址</a> &nbsp;&nbsp;&nbsp; <a href="https://lolimy.club/163-music/src">预览链接</a></p>
+                        </div>
+                        <div class="works-msg">
+                            <p>移动端播放、PC 端管理，移动端歌曲播放、切换、暂停、搜索、循环等功能，PC 端歌曲上传、删除、修改等功能。使用 jQuery、MVC、Observer 设计模式以及 LeanCloud、七牛等作为数据库实现。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-container">
+                    <div class="works-img"><a href="https://lolimy.club/vue-resume/src/"><img src="http://p5gyxlxbh.bkt.clouddn.com/vue-res.jpg" alt="在线简历编辑器" tittle="在线简历编辑器"></a></div>
+                    <div class="works-right">
+                        <div class="works-name">
+                            <h4>在线简历编辑器</h4>
+                            <hr>
+                            <p><a href="https://github.com/xuziang111/vue-resume">项目地址</a> &nbsp;&nbsp;&nbsp; <a href="https://lolimy.club/vue-resume/src/">预览链接</a></p>
+                        </div>
+                        <div class="works-msg">
+                            <p>Vue 在线简历编辑器，具有注册、登录、编辑、分享、打印等功能，目前已发布上线。主要使用 Vue.js、LeanCloud实现。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-container">
+                    <div class="works-img"><a href="https://lolimy.club/start"><img src="./works/nav-page.jpg" alt="导航首页" tittle="导航首页"></a></div>
+                    <div class="works-right">
+                        <div class="works-name">
+                            <h4>导航首页</h4>
+                            <hr>
+                            <p><a href="https://github.com/xuziang111/start">项目地址</a> &nbsp;&nbsp;&nbsp; <a href="https://lolimy.club/start">预览链接</a></p>
+                        </div>
+                        <div class="works-msg">
+                            <p>为键盘上的 26 个字母绑定了导航网址，敲击字母即可跳转至相应导航页面，还可以自定义每个键绑定的导航网址。主要利用原生 JavaScript 实现。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-container">
+                    <div class="works-img"><a href="https://lolimy.club/canvas"><img src="./works/canvas.jpg" alt="轻画板" tittle="轻画板"></a></div>
+                    <div class="works-right">
+                        <div class="works-name">
+                            <h4>轻画板</h4>
+                            <hr>
+                            <p><a href="https://github.com/xuziang111/canvas">项目地址</a> &nbsp;&nbsp;&nbsp; <a href="https://lolimy.club/canvas">预览链接</a></p>
+                        </div>
+                        <div class="works-msg">
+                            <p>在线画板，可以任意选择颜色、画笔类型、擦除、下载等，主要利用 <canvas> 以及原生 JavaScript 实现。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-container">
+                    <div class="works-img"><a href="https://lolimy.club/Pikachu/"><img src="./works/pikachu.jpg" alt="皮卡丘" tittle="皮卡丘"></a></div>
+                    <div class="works-right">
+                        <div class="works-name">
+                            <h4>皮卡丘</h4>
+                            <hr>
+                            <p><a href="https://lolimy.club/Pikachu/pika/">项目地址</a> &nbsp;&nbsp;&nbsp; <a href="https://lolimy.club/Pikachu/">预览链接</a></p>
+                        </div>
+                        <div class="works-msg">
+                            <p>模拟绘制皮卡丘的过程。主要使用原生 JavaScript 以及 CSS3 实现</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-container">
+                    <div class="works-img"><a href="https://lolimy.club/wheel/"><img src="./works/wheel.jpg" alt="造轮子" tittle="造轮子"></a></div>
+                    <div class="works-right">
+                        <div class="works-name">
+                            <h4>造轮子</h4>
+                            <hr>
+                            <p><a href="https://github.com/xuziang111/wheel">项目地址</a> &nbsp;&nbsp;&nbsp; <a href="https://lolimy.club/wheel/">预览链接</a></p>
+                        </div>
+                        <div class="works-msg">
+                            <p>使用原生js编写的dom库与一些利用jquery编写的组件。</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="skills">
+            <header>
+                <h3>个人技能</h3>
+                <div class="line-container"><div class="line"></div></div>
+            </header>
+            <div>
+                <div>
+                    <h4>HTML 5</h4>
+                    <p>根据 HTML5 标准编写具有语义化的文档结构，包括 &lt;nav>、&lt;header>、&lt;main>、&lt;section>、&lt;article>、&lt;aside>、&lt;footer> 等。</p>
+                </div>
+                <div>
+                    <h4>CSS 布局与居中</h4>
+                    <p>了解 flex 、grid布局以及水平、垂直居中常用方法。</p>
+                </div>
+                <div>
+                    <h4>响应式页面 </h4>
+                    <p>PC 端根据 &lt;meta name="viewport"> 以及媒体查询 (media query)，移动端根据动态 REM、vw/vh 等书写响应式页面，100% 还原设计稿。</p>
+                </div>
+                <div>
+                    <h4>原生 JavaScript</h4>
+                    <p>在不使用框架的情况下，能够使用原生 JS 常用 API 完成部分需求</p>
+                </div>
+                <div>
+                    <h4>this、闭包、原型链、作用域 </h4>
+                    <p>了解 this、闭包、原型链、作用域的基本概念，并能够熟练使用。</p>
+                </div>
+                <div>
+                    <h4>Vue.js</h4>
+                    <p>能够使用 Vue.js 完成需求，了解 Vue.js 的数据双向绑定、数据响应式原理、父子组件间的通信原理。</p>
+                </div>
+                <div>
+                    <h4>MVC、MVVM 设计模式</h4>
+                    <p>了解 MVC、MVVM 软件设计模式理念，并能够应用到实际项目中。</p>
+                </div>
+                <div>
+                    <h4>前端工程化 </h4>
+                    <p>了解 webpack、parcel 等前端打包工具，能够进行基础的使用。</p>
+                </div>
+                <div>
+                    <h4>Node.js </h4>
+                    <p>了解 Node.js 一些知识，能够使用 Node.js 搭建小服务器，根据请求的 URL 返回指定的数据。</p>
+                </div>
+                <div>
+                    <h4>HTTP </h4>
+                    <p>了解 HTTP 基础知识，了解常见状态码含义，能够根据请求查看响应。</p>
+                </div>
+                <p>等等</p>    
+            </div>
+        </section>
+        <section class="evaluation">
+            <header>
+                <h3>自我评价</h3>
+                <div class="line-container"><div class="line"></div></div>
+            </header>
+            <p>良好的心态和责任感，吃苦耐劳，擅于管理时间，勇于面对变化和挑战。习惯制定切实可行的学习计划，上岗后能积极主动学习岗位所需知识技能。</p>
+        </section>
+    </main>
+</body>
+</html>
